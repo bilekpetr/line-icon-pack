@@ -1,0 +1,19 @@
+# Line Icon Pack
+
+> 406 line icons on a 24 px grid with an adjustable corner radius: presets original, rounded and sharp, plus solid fill and fill-sharp sets. Package line-icon-pack, installed from GitHub: SVG files, sprites, icon fonts (lip- classes), a JS API, React components, a CLI and an MCP server.
+
+## Use
+
+- Install: `npm install github:bilekpetr/line-icon-pack` (not on the npm registry; pin a tag with `#v0.1.0`)
+- Find: `npx -y github:bilekpetr/line-icon-pack search "<words>"`; names are kebab-case like `users-add`, JS exports camelCase like `usersAdd`
+- React: `import { UsersAddIcon } from 'line-icon-pack/react/icons'`
+- JS: `import { toSvg } from 'line-icon-pack'; import { usersAdd } from 'line-icon-pack/icons'; toSvg(usersAdd, { preset: 'rounded' })`
+- SVG file: `line-icon-pack/svg/<original|rounded|sharp|fill|fill-sharp>/<name>.svg`
+- Font: `line-icon-pack/font/<set>/line-icon-pack-<set>.css` → `<i class="lip-<set> lip-<name>"></i>`
+- MCP: `npx -y github:bilekpetr/line-icon-pack mcp` (tools search_icons, get_icon, list_categories, list_presets)
+
+## Docs
+
+- [README](README.md): every format with examples
+- [AGENTS.md](AGENTS.md): how coding agents find and insert icons
+- [Website](https://lineiconpack.com): browse, customise and copy

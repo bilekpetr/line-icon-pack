@@ -1,0 +1,89 @@
+{
+  "name": "line-icon-pack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "406 line icons on a 24 px grid: outline with an adjustable corner radius (original, rounded, sharp) and solid sets – SVG, sprite, icon font, JS, React, CLI and an MCP server for AI agents.",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./icons": {
+      "types": "./icons/index.d.ts",
+      "default": "./icons/index.js"
+    },
+    "./icons/*": "./icons/*",
+    "./all": {
+      "types": "./src/all.d.ts",
+      "default": "./src/all.js"
+    },
+    "./react": {
+      "types": "./src/react.d.ts",
+      "default": "./src/react.js"
+    },
+    "./react/icons": {
+      "types": "./react/icons.d.ts",
+      "default": "./react/icons.js"
+    },
+    "./runtime": {
+      "types": "./src/runtime.d.ts",
+      "default": "./src/runtime.js"
+    },
+    "./presets": {
+      "types": "./src/presets.d.ts",
+      "default": "./src/presets.js"
+    },
+    "./search": {
+      "types": "./src/search.d.ts",
+      "default": "./src/search.js"
+    },
+    "./data/*": "./data/*",
+    "./svg/*": "./svg/*",
+    "./sprite/*": "./sprite/*",
+    "./font/*": "./font/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "icons",
+    "react",
+    "data",
+    "svg",
+    "sprite",
+    "font",
+    "LICENSE.md",
+    "README.md",
+    "AGENTS.md",
+    "llms.txt",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "icons",
+    "line-icons",
+    "svg",
+    "icon-font",
+    "react",
+    "mcp"
+  ],
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "line-icon-pack": "./src/cli.js"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://lineiconpack.com",
+  "author": "Petr Bílek <bilekpetr92@gmail.com>"
+}
